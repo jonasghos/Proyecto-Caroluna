@@ -1,0 +1,41 @@
+$ancho: 80%;
+$alto: auto;
+
+/*Section Us*/
+
+.main--us{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 53px;
+    margin-bottom: 53px;
+    justify-items: center;
+    align-items: center; 
+    .text {
+        .text--title {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px; 
+        }
+        .text--parraf {
+            font-weight: 400; 
+            font-size: 24px;
+        }
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+

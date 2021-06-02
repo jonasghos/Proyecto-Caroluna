@@ -1,0 +1,48 @@
+/*Section Home*/
+
+.sectionHome{
+    height: 101vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../imagenes/1.jpg);
+    display: grid;
+    align-content: space-between;
+    animation: change 30s infinite ease-in-out;
+
+    .container-img{
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+        .img--logo{
+            width: auto;
+        }
+
+    }
+    .container__btn{
+        display: grid;
+        justify-content: center;
+        .btn--home{
+            width: 200px;
+            height: 70px;
+            background: none;
+            box-shadow: none;
+            border: 4px solid black;
+            text-align: center;
+            line-height: 60px;
+            text-decoration: none;
+            color: rgb(37, 37, 37);
+            font-weight: 700;
+            font-size: 25px;
+            transition: .2s;
+        }
+        .btn--home:hover{
+            color: rgb(0, 0, 0);
+            border: 4px solid rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+            transition: 0.4s;
+        
+        }
+    }
+}
+
+

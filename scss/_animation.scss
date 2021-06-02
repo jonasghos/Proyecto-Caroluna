@@ -1,0 +1,32 @@
+/*Animaciones*/
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes change{
+    0% {
+        background-image: url(../imagenes/1.jpg);
+    }
+    20% {
+        background-image: url(../imagenes/2.jpg);
+    }
+    40% {
+        background-image: url(../imagenes/3.jpg);
+    }
+    60% {
+        background-image: url(../imagenes/4.jpg);
+    }
+    80% {
+        background-image: url(../imagenes/5.jpg);
+    }
+    100% {
+        background-image: url(../imagenes/1.jpg);
+
+    }
+    
+}
