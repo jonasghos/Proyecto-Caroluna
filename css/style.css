@@ -31,7 +31,7 @@
         height: 35px;
         font-size: 22px;
         transition: .3s;
-        color: #252525;
+        color: rgb(20, 20, 20);
         transition: .2s; }
         .footer .footer__bar .bar__btn .btn__link .link--icon {
           width: 30px;
@@ -45,7 +45,8 @@
     .footer .footer__copyright .footer__copyright--text {
       margin-top: auto;
       margin-bottom: auto;
-      font-weight: 300; }
+      font-weight: 300;
+      color: rgb(20, 20, 20); }
   .footer .footer__link {
     display: grid;
     align-content: center;
@@ -54,8 +55,9 @@
     font-weight: 600; }
     .footer .footer__link .nick {
       text-decoration: none;
+      font-weight: bolder;
       transition: .2s;
-      color: #252525; }
+      color: rgb(20, 20, 20); }
     .footer .footer__link .nick:hover {
       color: #636363;
       transition: .4s; }
