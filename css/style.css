@@ -251,6 +251,9 @@
 
 /*Responive Style*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  /*Section Home*/
+  .sectionHome {
+    height: 700px; }
   /*Section Services*/
   .main--services {
     width: 100%; }
@@ -308,6 +311,9 @@
       justify-content: center; } }
 
 @media all and (max-width: 768px) {
+  /*Section Home*/
+  .sectionHome {
+    height: 700px; }
   /*Section Galery*/
   .main-galery {
     width: 98%;
