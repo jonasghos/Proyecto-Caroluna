@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;500;700&display=swap" rel="stylesheet">
 
     <!-- Social Buttons -->
     <script src="https://kit.fontawesome.com/9c7fb005b9.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
 <body>
     <div>
         <header class="head">
-            <nav class="navbar navbar-expand-md navbar-light bg-light" style="height: auto;">
+            <nav class="navbar navbar-expand-md navbar-light" style="height: auto;">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -47,6 +47,7 @@
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="./services.html#photoProfesional">Fotografia Profesional</a></li>
                         <li><a class="dropdown-item" href="./services.html#photoProducto">Fotografia de Producto</a></li>
+                        <li><a class="dropdown-item" href="./services.html#photoE-commerce">Fotografia E-Commerce</a></li>
                         <li><a class="dropdown-item" href="./services.html#retoqueDigital">Retoque Digital</a></li>
                         <li><a class="dropdown-item" href="./services.html#manejoDeRedes">Manejo de Redes</a></li>
                       </ul>
@@ -64,37 +65,50 @@
             </nav>
         </header>
         <div class="main--us">
-          <div class="text">
-            <h3 class="text--title">Mi Historia</h3>
-            <p class="text--parraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus iure assumenda velit fuga aliquam fugit, dolore accusamus dolorem hic vero doloribus officiis ipsam eos enim numquam laboriosam sint! Eligendi mollitia neque perferendis quia deleniti magni id sit, maxime explicabo.</p>
-            <p class="text--parraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur illo repellat hic, accusamus, aut sunt, exercitationem impedit assumenda minus id tenetur numquam beatae reiciendis cumque nesciunt blanditiis tempora ad quo ullam facilis at labore?</p>
-            <p class="text--parraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa amet totam recusandae neque sunt, voluptate voluptatem enim accusamus. Dolorum eius pariatur molestiae voluptates voluptas ratione, consectetur expedita assumenda ullam error, aut ab totam est rerum magnam corporis placeat rem distinctio eos! Nostrum aliquam praesentium tempora?</p>
-            <p class="text--parraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim accusantium quos neque voluptatem repellendus expedita odit at sed. Deleniti delectus mollitia alias rem. Perferendis officiis doloremque eveniet quae obcaecati placeat doloribus dolore blanditiis, quos est ipsam id ut voluptatibus repellat?</p>
-          </div>
-          <div class="image">
-            <img class="image--img" src="../imagenes/10.jpg">
+          <div class="clearfix text">
+            <h3>Sobre Mí</h3>
+            <img src="../imagenes/10.png" class="col-md-8 float-md-end mb-2 ms-md-2 text--image">        
+            <p class="text--parraf ">
+              Soy Caro Fernández, tengo 26 años, nací y vivo en Capital Federal, Bs As. En marzo del 2020 me recibí de Fotógrafa Profesional. Actualmente, estoy cursando la carrera de Marketing y me dedico a la fotografía de producto, sociales y gestión de cuentas, que si bien lo disfruto, mi gran pasión es la fotografía de naturaleza.
+            </p>
+            <p  class="text--parraf ">
+              La fotografía es arte, es conexión y comunicación. Es la decisión constante de qué mostrar y qué dejar de lado, de cuáles reglas respetar y cuales romper. La fotografía es para mí, un canal entre la realidad externa y mi interior, es una herramienta maravillosa, una compañera para toda la vida, con la que quiero viajar y trabajar mientras me deleito con diferentes paisajes. Deseo mostrar mi vision del mundo a traves de las fotos, que puedas apreciar cada instante, cada detalle que capto.
+            </p>
+            <p  class="text--parraf ">
+              Buen humor, profesionalismo y vocación por el trabajo son algunas de mis cualidades. 
+            </p>
           </div>
         </div>
-        <div class="footer text-secondaty bg-light">
+        <div class="footer text-secondary">
             <div class="footer__bar">
                 <ul class="bar__btn">
-                  <a class="btn__link " href="https://web.whatsapp.com/"><i class="fab fa-whatsapp btn__link link--icon"></i></a>
-                  <a class="btn__link " href="https://www.instagram.com/"><i class="fab fa-instagram  btn__link link--icon"></i></a>
-                  <a class="btn__link " href=""><i class="fas fa-share-alt  btn__link link--icon"></i></a>
-                  <a class="btn__link " href="https://www.facebook.com/"><i class="fab fa-facebook  btn__link link--icon"></i></a>
+                  <a class="btn__link " href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp btn__link link--icon"></i></a>
+                  <a class="btn__link " href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram  btn__link link--icon"></i></a>
+                  <a class="btn_link" href="javascript:getlink();"><i class="fas fa-share-alt  btn__link link--icon"></i></a>
+                  <a class="btn__link " href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook  btn__link link--icon"></i></a>
               </ul>
             </div>
             <div class="footer__copyright text-center">
                 <p class="footer__copyright--text"><i class="far fa-copyright"></i> Caroluna Fotografia. All rights reserved.</p>
             </div>
             <div class="footer__link text-end">
-                <a href="https://www.linkedin.com/in/jonasgho/" class="nick ">By JonasG</a>
+                <a href="https://www.linkedin.com/in/jonasgho/" target="_blank" class="nick ">By JonasG</a>
             </div>
         </div>
           
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
+    <script>
+      function getlink() {
+          var aux = document.createElement("input");
+          aux.setAttribute("value",window.location.href);
+          document.body.appendChild(aux);
+          aux.select();
+          document.execCommand("copy");
+          document.body.removeChild(aux);
+          alert("Enlace copiado");
+      }
+  </script>
 </body>
 </html>

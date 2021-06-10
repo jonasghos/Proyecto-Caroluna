@@ -6,19 +6,27 @@
   font-family: 'Saira Semi Condensed', sans-serif; }
 
 /*Section Header*/
-.nav-item {
-  margin-right: 15px; }
-  .nav-item .nav-link {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 20px; }
+.navbar {
+  background-color: rgba(102, 102, 102, 0.7); }
+  .navbar .nav-item {
+    margin-right: 15px; }
+    .navbar .nav-item .nav-link {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #131313;
+      transition: .4s; }
+    .navbar .nav-item .nav-link:hover {
+      color: white;
+      transition: .4s; }
 
 /*Footer*/
 .footer {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr; }
+  grid-template-columns: 1fr  1fr 1fr;
+  background-color: rgba(102, 102, 102, 0.7); }
   .footer .footer__bar {
     display: grid;
     align-content: center; }
@@ -28,16 +36,13 @@
       margin-bottom: auto; }
       .footer .footer__bar .bar__btn .btn__link {
         width: 30px;
-        height: 35px;
-        font-size: 22px;
+        margin-top: 5px;
+        font-size: 21px;
         transition: .3s;
-        color: rgb(20, 20, 20);
+        color: #131313;
         transition: .2s; }
-        .footer .footer__bar .bar__btn .btn__link .link--icon {
-          width: 30px;
-          height: 30px; }
       .footer .footer__bar .bar__btn .btn__link:hover {
-        color: #636363;
+        color: white;
         transition: .4s; }
   .footer .footer__copyright {
     display: grid;
@@ -45,32 +50,37 @@
     .footer .footer__copyright .footer__copyright--text {
       margin-top: auto;
       margin-bottom: auto;
-      font-weight: 300;
-      color: rgb(20, 20, 20); }
+      font-weight: bolder;
+      color: #131313; }
   .footer .footer__link {
     display: grid;
     align-content: center;
     margin-right: 20px;
-    font-size: 20px;
-    font-weight: 600; }
+    font-size: 20px; }
     .footer .footer__link .nick {
       text-decoration: none;
-      font-weight: bolder;
       transition: .2s;
-      color: rgb(20, 20, 20); }
+      color: #131313;
+      font-weight: bold; }
     .footer .footer__link .nick:hover {
-      color: #636363;
+      color: white;
       transition: .4s; }
 
 /*Section Home*/
 .sectionHome {
   height: 101vh;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
   background-image: url(../imagenes/1.jpg);
   display: grid;
   align-content: space-between;
-  animation: change 30s infinite ease-in-out; }
+  animation: change 30s infinite;
+  -webkit-animation: change 30s infinite linear;
+  -moz-animation: change 30s infinite linear;
+  -o-animation: change 30s infinite linear;
+  animation: change 30s infinite linear; }
   .sectionHome .container-img {
     display: grid;
     justify-content: center;
@@ -145,32 +155,36 @@
 
 /*Section Us*/
 .main--us {
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin-top: 53px;
-  margin-bottom: 53px;
-  justify-items: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(../imagenes/12.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
   align-items: center; }
-  .main--us .text .text--title {
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px; }
-  .main--us .text .text--parraf {
-    font-weight: 400;
-    font-size: 24px; }
-  .main--us .image {
-    width: 100%;
-    height: 100%;
+  .main--us .text {
+    width: 50%;
     padding: 15px;
-    display: flex;
-    justify-content: center; }
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px; }
+    .main--us .text .text--title {
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px; }
+    .main--us .text .text--parraf {
+      font-weight: 400;
+      font-size: 20px; }
+    .main--us .text .text--image {
+      width: 300px; }
 
 /*Section Contact*/
 .form {
@@ -237,22 +251,17 @@
 /*Responive Style*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
   /*Section Services*/
+  .main--services {
+    width: 100%; }
+    .main--services .container--services {
+      width: 100%; }
+      .main--services .container--services .card {
+        width: 100%; }
   /*Section Us*/
   .main--us {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 1fr;
-    height: auto;
-    margin-bottom: 10px; }
+    height: 110vh; }
     .main--us .text {
-      height: auto;
-      grid-row: 1/2; }
-    .main--us .image {
-      grid-row: 2/3;
-      display: grid;
-      justify-content: center;
-      width: 100%;
-      padding: 0; }
+      width: 70%; }
   /*Section Galery*/
   .main-galery .container__carousel {
     width: 90%; }
@@ -337,47 +346,23 @@
           object-fit: cover; }
         .main-galery .container__grid .box .item--6 {
           object-position: 100% 100%; }
-  /*Section Services*/
-  .grid {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr); }
-    .grid .photoProduct {
-      display: grid;
-      grid-column: 1/2;
-      grid-row: 1/2; }
-    .grid .photoOutside {
-      display: grid;
-      grid-column: 2/3;
-      grid-row: 1/3; }
-    .grid .photoBooks {
-      display: grid;
-      grid-column: 1/2;
-      grid-row: 2/3; }
-    .grid .photoNature {
-      display: grid;
-      grid-column: 1/3;
-      grid-row: 3/4; }
-    .grid .btn--services {
-      display: flex;
-      justify-content: center; }
+  /*Serction Services*/
+  .main--services {
+    width: 100%; }
+    .main--services .container--services {
+      width: 100%; }
+      .main--services .container--services .card {
+        width: 100%; }
   /*Section Us*/
   .main--us {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr;
-    height: auto;
-    margin-bottom: 15px; }
+    height: 110vh; }
     .main--us .text {
-      height: auto;
-      grid-row: 1/2; }
-    .main--us .image {
-      grid-row: 2/3;
+      width: 90%;
       display: grid;
-      justify-content: center;
-      height: 100%;
-      padding: 0; }
+      justify-content: center; }
+      .main--us .text .text--image {
+        margin-right: auto;
+        margin-left: auto; }
   /*Footer*/
   .footer {
     display: grid;

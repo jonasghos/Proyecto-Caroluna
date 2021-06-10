@@ -23,13 +23,13 @@
         <div class="container__btn">
             <a href="./section/galeryBooks.html"  class="btn--home">ENTRAR</a>
         </div>
-        <div class="footer">
+        <div class="footer" style="background-color: rgba(102, 102, 102, 0);">
             <div class=" footer__bar">
                 <ul class="bar__btn">
-                    <a class="btn__link " href="https://web.whatsapp.com/"><i class="fab fa-whatsapp btn__link link--icon"></i></a>
-                    <a class="btn__link " href="https://www.instagram.com/"><i class="fab fa-instagram  btn__link link--icon"></i></a>
-                    <a class="btn__link " href=""><i class="fas fa-share-alt  btn__link link--icon"></i></a>
-                    <a class="btn__link " href="https://www.facebook.com/"><i class="fab fa-facebook  btn__link link--icon"></i></a>
+                    <a class="btn__link " href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp btn__link link--icon"></i></a>
+                    <a class="btn__link " href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram  btn__link link--icon"></i></a>
+                    <a class="btn_link" href="javascript:getlink();"><i class="fas fa-share-alt  btn__link link--icon"></i></a>
+                    <a class="btn__link " href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook  btn__link link--icon"></i></a>
                 </ul>
             </div>
             <div class="footer__copyright text-center">
@@ -40,5 +40,16 @@
             </div>
         </div>
     </section>
+    <script>
+        function getlink() {
+            var aux = document.createElement("input");
+            aux.setAttribute("value",window.location.href);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+            alert("Enlace copiado");
+        }
+    </script>
   </body>
 </html>

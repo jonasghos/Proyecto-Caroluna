@@ -3,23 +3,23 @@
 @media all and (min-width: 768px ) and (max-width:1023px){
     /*Section Services*/
 
+    .main--services{
+        width: 100%;
+        .container--services{
+            width: 100%;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+
     /*Section Us*/
     .main--us{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 1fr;
-        height: auto;
-        margin-bottom: 10px;
+        height: 110vh;
         .text{
-            height: auto;
-            grid-row: 1/2;
-        }
-        .image{
-            grid-row: 2/3;
-            display: grid;
-            justify-content: center;
-            width: 100%;
-            padding: 0;
+            width: 70%;
+            .text--image{
+            }
         }
     }
     /*Section Galery*/
@@ -136,62 +136,32 @@
                 .item--6{
                     object-position: 100% 100%;
                 }
-
-
             }
-
         }
     }
-    /*Section Services*/
-    .grid{
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        .photoProduct{
-            display: grid;
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        .photoOutside{
-            
-            display: grid;
-            grid-column: 2/3;
-            grid-row: 1/3;
-        }
-        .photoBooks {
-            display: grid;
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-        .photoNature {
-            display: grid;
-            grid-column: 1/3;
-            grid-row: 3/4;
-        }
-        .btn--services{
-            display: flex;
-            justify-content: center;
+
+    /*Serction Services*/
+    .main--services{
+        width: 100%;
+        .container--services{
+            width: 100%;
+            .card{
+                width: 100%;
+            }
         }
     }
 
     /*Section Us*/
     .main--us{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr .5fr;
-        height: auto;
-        margin-bottom: 15px;
+        height: 110vh;
         .text{
-            height: auto;
-            grid-row: 1/2;
-        }
-        .image{
-            grid-row: 2/3;
+            width: 90%;
             display: grid;
             justify-content: center;
-            height: 100%;
-            padding: 0;
+            .text--image{
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
     }
     /*Footer*/
@@ -213,8 +183,7 @@
         }
         .footer__link{
             display: grid;
-            justify-content: center;
-            
+            justify-content: center;    
         }
     }
 }

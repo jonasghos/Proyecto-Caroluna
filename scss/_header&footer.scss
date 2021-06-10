@@ -1,12 +1,21 @@
 /*Section Header*/
 
+.navbar{
+    background-color: rgba($color: #666666, $alpha: .7);
 .nav-item {
     margin-right: 15px;
     .nav-link{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 20px;
+    color: rgb(19, 19, 19);
+    transition: .4s;
     }
+    .nav-link:hover{
+        color: rgb(255, 255, 255);
+        transition: .4s;
+    }
+}
 }
 
 /*Footer*/
@@ -15,6 +24,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr  1fr 1fr;
+    background-color: rgba($color: #666666, $alpha: .7);
     .footer__bar{
         display: grid;
         align-content: center;
@@ -24,18 +34,14 @@
             margin-bottom: auto;
             .btn__link{
                 width: 30px;
-                height: 35px;
-                font-size: 22px;
+                margin-top: 5px;
+                font-size: 21px;
                 transition: .3s;
-                color: rgb(37, 37, 37);
+                color: rgb(19, 19, 19);
                 transition: .2s;
-                .link--icon{
-                    width: 30px;
-                    height: 30px;   
-                }
             }
             .btn__link:hover{
-                color: rgb(99, 99, 99);
+                color: rgb(255, 255, 255);
                 transition: .4s;
             }
         }
@@ -46,7 +52,8 @@
         .footer__copyright--text{
             margin-top: auto;
             margin-bottom: auto;
-            font-weight: 300;
+            font-weight: bolder;
+            color: rgb(19, 19, 19);
         }
     }
     .footer__link{
@@ -54,14 +61,15 @@
         align-content: center;    
         margin-right: 20px;
         font-size: 20px;
-        font-weight: 600;
+        
         .nick {
             text-decoration: none;
             transition: .2s;
-            color: rgb(37, 37, 37);
+            color: rgb(19, 19, 19);
+            font-weight: bold;
         }
         .nick:hover{
-            color: rgb(99, 99, 99); 
+            color: rgb(255, 255, 255); 
             transition: .4s;
         }
     }

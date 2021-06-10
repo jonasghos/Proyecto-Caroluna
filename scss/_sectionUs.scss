@@ -4,18 +4,26 @@ $alto: auto;
 /*Section Us*/
 
 .main--us{
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    margin-top: 53px;
-    margin-bottom: 53px;
-    justify-items: center;
-    align-items: center; 
+    width: 100%;
+    height: 90vh;
+    background-image: url(../imagenes/12.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .text {
+        width: 50%;
+        padding: 15px;
+        background-color: rgba($color: #ffffff, $alpha: .7);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
         .text--title {
             text-transform: uppercase;
             text-decoration: underline;
@@ -25,15 +33,11 @@ $alto: auto;
         }
         .text--parraf {
             font-weight: 400; 
-            font-size: 24px;
+            font-size: 20px;
         }
-    }
-    .image {
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
+        .text--image{
+            width: 300px;
+        }
     }
 }
 
