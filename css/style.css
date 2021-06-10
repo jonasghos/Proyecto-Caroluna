@@ -390,11 +390,13 @@
       margin-right: auto; }
   /*Section Us*/
   .main--us {
-    height: 120vh; }
+    height: 1280px; }
     .main--us .text {
+      padding: 10px;
       width: 100%;
       display: grid;
       justify-content: center; }
       .main--us .text .text--image {
-        margin-right: auto;
-        margin-left: auto; } }
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto; } }
