@@ -260,7 +260,7 @@
         width: 100%; }
   /*Section Us*/
   .main--us {
-    height: 110vh; }
+    height: auto; }
     .main--us .text {
       width: 70%; }
   /*Section Galery*/
@@ -356,7 +356,7 @@
         width: 100%; }
   /*Section Us*/
   .main--us {
-    height: 110vh; }
+    height: auto; }
     .main--us .text {
       width: 90%;
       display: grid;
