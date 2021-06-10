@@ -379,3 +379,22 @@
     .footer .footer__link {
       display: grid;
       justify-content: center; } }
+
+@media all and (max-width: 490px) {
+  /*Section Home*/
+  .sectionHome .container-img {
+    display: grid; }
+    .sectionHome .container-img .img--logo {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+  /*Section Us*/
+  .main--us {
+    height: 120vh; }
+    .main--us .text {
+      width: 100%;
+      display: grid;
+      justify-content: center; }
+      .main--us .text .text--image {
+        margin-right: auto;
+        margin-left: auto; } }
